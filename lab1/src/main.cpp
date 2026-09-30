@@ -183,7 +183,7 @@ int main() {
 }
 
 
-// cd ~/oop/lab1/build
+// cd ~/oop_lab/lab1/build
 // cmake --build .
 // ./main_app
 // ./unit_tests
