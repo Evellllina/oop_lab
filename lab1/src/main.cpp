@@ -38,7 +38,7 @@ int main() {
         std::cout << "4. Удалить элемент\n";
         std::cout << "5. Изменить размер\n";
         std::cout << "6. Печать\n";
-        std::cout << "7. Алгоритм варианта (Сортировка + Диапазон)\n";
+        std::cout << "7. Алгоритм варианта\n";
         std::cout << "0. Выход\n";
 
         if (!read_int("Выберите действие: ", choice)) {
@@ -84,7 +84,7 @@ int main() {
                 if (!(std::cin >> pos)) {
                     std::cin.clear();
                     std::cin.ignore(10000, '\n');
-                    std::cout << "Ошибка ввода позиции.\n";
+                    std::cout << "Ошибка ввода позиции\n";
                     break;
                 }
 
@@ -92,7 +92,7 @@ int main() {
                 if (!(std::cin >> val)) {
                     std::cin.clear();
                     std::cin.ignore(10000, '\n');
-                    std::cout << "Ошибка ввода значения.\n";
+                    std::cout << "Ошибка ввода значения\n";
                     break;
                 }
 
@@ -104,7 +104,7 @@ int main() {
 
             case 4: { 
                 if (arr == nullptr || size == 0) {
-                    std::cout << "Массив пуст или не создан.\n";
+                    std::cout << "Массив пуст или не создан\n";
                     break;
                 }
                 std::size_t pos;
@@ -143,7 +143,7 @@ int main() {
 
             case 7: {
                 if (arr == nullptr || size == 0) {
-                    std::cout << "Массив пуст или не создан.\n";
+                    std::cout << "Массив пуст или не создан\n";
                     break;
                 }
 
@@ -173,7 +173,7 @@ int main() {
                 break;
 
             default:
-                std::cout << "Неверный выбор. Попробуйте снова.\n";
+                std::cout << "Неверный выбор\n";
         }
     } while (choice != 0);
 
